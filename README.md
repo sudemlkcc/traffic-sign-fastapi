@@ -1,4 +1,4 @@
-# Traffic Sign Classification API 🚦
+# Traffic Sign Classification API
 
 FastAPI ve Docker kullanarak trafik işareti sınıflandırma servisi.
 
