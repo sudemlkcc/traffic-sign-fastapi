@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  traffic-sign-api:
+    build: .
+    container_name: traffic-sign-classifier
+    ports:
+      - "7001:7001"
+    volumes:
+      - ./models:/app/models
+    environment:
+      - MODEL_PATH=/app/models/traffic_sign_model.h5
+    restart: unless-stopped
